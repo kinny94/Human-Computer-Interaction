@@ -1,0 +1,3 @@
+This is the Git Repository for our project. We will be doing all the coding on our local machines and then committing the changes to Git. Please DO NOT PLAY WITH CODE. Clone the repository to your local system or download the zip file, then make changes to it on your local System. After making the changes upload the file to the Repositpry again. Please DO NOT COMMIT TO THE MASTER BRANCH. Create a new branch while committing . If you don't know git, email me the file, I will add it to the team.  
+
+Happy Coding :)
