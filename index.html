@@ -10,484 +10,568 @@
 </style>
 <body>
 
-<div id="mySidenav" class="sidenav">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="container">
-  		<div class="col-lg-12" id="freeSpace">
-  			<h1>Schedule your tasks</h1>
-  		</div>
-  		<!-------------------------------------- TASK ONE ---------------------------->
-  		<div class="col-lg-12">
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group">
-  						<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
-  						<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
-  					</div>
-  				</form>
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group">
-  						<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
-  						<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
-  					</div>
-  				</form>	
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group form-control-lg">
-  						<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
-  						<select class="form-control" id="startTime">
-  							<option>00:00</option>
-  							<option>01:00</option>
-  							<option>02:00</option>
-  							<option>03:00</option>
-  							<option>04:00</option>
-  							<option>05:00</option>
-  							<option>06:00</option>
-  							<option>07:00</option>
-  							<option>08:00</option>
-  							<option>09:00</option>
-  							<option>10:00</option>
-  							<option>11:00</option>
-  							<option>12:00</option>
-  							<option>13:00</option>
-  							<option>14:00</option>
-  							<option>14:00</option>
-  							<option>15:00</option>
-  							<option>16:00</option>
-  							<option>17:00</option>
-  							<option>18:00</option>
-  							<option>19:00</option>
-  							<option>20:00</option>
-  							<option>21:00</option>
-  							<option>22:00</option>
-  							<option>23:00</option>
-  							<option>24:00</option>
-  						</select>
-  					</div>
-  				</form>	
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group form-control-lg">
-  						<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
-  						<select class="form-control" id="endTime">
-  							<option>00:00</option>
-  							<option>01:00</option>
-  							<option>02:00</option>
-  							<option>03:00</option>
-  							<option>04:00</option>
-  							<option>05:00</option>
-  							<option>06:00</option>
-  							<option>07:00</option>
-  							<option>08:00</option>
-  							<option>09:00</option>
-  							<option>10:00</option>
-  							<option>11:00</option>
-  							<option>12:00</option>
-  							<option>13:00</option>
-  							<option>14:00</option>
-  							<option>14:00</option>
-  							<option>15:00</option>
-  							<option>16:00</option>
-  							<option>17:00</option>
-  							<option>18:00</option>
-  							<option>19:00</option>
-  							<option>20:00</option>
-  							<option>21:00</option>
-  							<option>22:00</option>
-  							<option>23:00</option>
-  							<option>24:00</option>
-  						</select>
-  					</div>
-  				</form>
-  			</div>
-  		</div>
+	<div class="col-md-10" style="height: 620px;background-image: url('img/snakesAndLadder.png');background-repeat: no-repeat;background-size: 1150px 620px;">
+		<h1>Gaming Menu</h1>
+		<span style="font-size:30px;cursor:pointer" onclick="clicked()" >&#9776; Setup your Tasks</span>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="clicked2()">&times;</a>
+			<div class="container">
+				<div class="col-lg-12" id="freeSpace">
+					<h1>Schedule your tasks</h1>
+				</div>
+				<!-------------------------------------- TASK ONE ---------------------------->
+				<div class="col-lg-12">
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group">
+								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group">
+								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+							</div>
+						</form>	
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group form-control-lg">
+								<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
+								<select class="form-control" id="startTime">
+									<option>00:00</option>
+									<option>01:00</option>
+									<option>02:00</option>
+									<option>03:00</option>
+									<option>04:00</option>
+									<option>05:00</option>
+									<option>06:00</option>
+									<option>07:00</option>
+									<option>08:00</option>
+									<option>09:00</option>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+									<option>14:00</option>
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+									<option>17:00</option>
+									<option>18:00</option>
+									<option>19:00</option>
+									<option>20:00</option>
+									<option>21:00</option>
+									<option>22:00</option>
+									<option>23:00</option>
+									<option>24:00</option>
+								</select>
+							</div>
+						</form>	
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group form-control-lg">
+								<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
+								<select class="form-control" id="endTime">
+									<option>00:00</option>
+									<option>01:00</option>
+									<option>02:00</option>
+									<option>03:00</option>
+									<option>04:00</option>
+									<option>05:00</option>
+									<option>06:00</option>
+									<option>07:00</option>
+									<option>08:00</option>
+									<option>09:00</option>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+									<option>14:00</option>
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+									<option>17:00</option>
+									<option>18:00</option>
+									<option>19:00</option>
+									<option>20:00</option>
+									<option>21:00</option>
+									<option>22:00</option>
+									<option>23:00</option>
+									<option>24:00</option>
+								</select>
+							</div>
+						</form>
+					</div>
+				</div>
 
-		<!-------------------------------------- TASK Two ---------------------------->
-		<div class="col-lg-12">
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group">
-  						<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
-  						<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
-  					</div>
-  				</form>
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group">
-  						<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
-  						<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
-  					</div>
-  				</form>	
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group form-control-lg">
-  						<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
-  						<select class="form-control" id="startTime">
-  							<option>00:00</option>
-  							<option>01:00</option>
-  							<option>02:00</option>
-  							<option>03:00</option>
-  							<option>04:00</option>
-  							<option>05:00</option>
-  							<option>06:00</option>
-  							<option>07:00</option>
-  							<option>08:00</option>
-  							<option>09:00</option>
-  							<option>10:00</option>
-  							<option>11:00</option>
-  							<option>12:00</option>
-  							<option>13:00</option>
-  							<option>14:00</option>
-  							<option>14:00</option>
-  							<option>15:00</option>
-  							<option>16:00</option>
-  							<option>17:00</option>
-  							<option>18:00</option>
-  							<option>19:00</option>
-  							<option>20:00</option>
-  							<option>21:00</option>
-  							<option>22:00</option>
-  							<option>23:00</option>
-  							<option>24:00</option>
-  						</select>
-  					</div>
-  				</form>	
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group form-control-lg">
-  						<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
-  						<select class="form-control" id="endTime">
-  							<option>00:00</option>
-  							<option>01:00</option>
-  							<option>02:00</option>
-  							<option>03:00</option>
-  							<option>04:00</option>
-  							<option>05:00</option>
-  							<option>06:00</option>
-  							<option>07:00</option>
-  							<option>08:00</option>
-  							<option>09:00</option>
-  							<option>10:00</option>
-  							<option>11:00</option>
-  							<option>12:00</option>
-  							<option>13:00</option>
-  							<option>14:00</option>
-  							<option>14:00</option>
-  							<option>15:00</option>
-  							<option>16:00</option>
-  							<option>17:00</option>
-  							<option>18:00</option>
-  							<option>19:00</option>
-  							<option>20:00</option>
-  							<option>21:00</option>
-  							<option>22:00</option>
-  							<option>23:00</option>
-  							<option>24:00</option>
-  						</select>
-  					</div>
-  				</form>
-  			</div>
-  		</div>
+				<!-------------------------------------- TASK Two ---------------------------->
+				<div class="col-lg-12">
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group">
+								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group">
+								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+							</div>
+						</form>	
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group form-control-lg">
+								<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
+								<select class="form-control" id="startTime">
+									<option>00:00</option>
+									<option>01:00</option>
+									<option>02:00</option>
+									<option>03:00</option>
+									<option>04:00</option>
+									<option>05:00</option>
+									<option>06:00</option>
+									<option>07:00</option>
+									<option>08:00</option>
+									<option>09:00</option>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+									<option>14:00</option>
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+									<option>17:00</option>
+									<option>18:00</option>
+									<option>19:00</option>
+									<option>20:00</option>
+									<option>21:00</option>
+									<option>22:00</option>
+									<option>23:00</option>
+									<option>24:00</option>
+								</select>
+							</div>
+						</form>	
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group form-control-lg">
+								<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
+								<select class="form-control" id="endTime">
+									<option>00:00</option>
+									<option>01:00</option>
+									<option>02:00</option>
+									<option>03:00</option>
+									<option>04:00</option>
+									<option>05:00</option>
+									<option>06:00</option>
+									<option>07:00</option>
+									<option>08:00</option>
+									<option>09:00</option>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+									<option>14:00</option>
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+									<option>17:00</option>
+									<option>18:00</option>
+									<option>19:00</option>
+									<option>20:00</option>
+									<option>21:00</option>
+									<option>22:00</option>
+									<option>23:00</option>
+									<option>24:00</option>
+								</select>
+							</div>
+						</form>
+					</div>
+				</div>
 
-  		<!-------------------------------------- Task Three ---------------------------->
+				<!-------------------------------------- Task Three ---------------------------->
 
-  		<div class="col-lg-12">
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group">
-  						<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
-  						<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
-  					</div>
-  				</form>
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group">
-  						<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
-  						<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
-  					</div>
-  				</form>	
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group form-control-lg">
-  						<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
-  						<select class="form-control" id="startTime">
-  							<option>00:00</option>
-  							<option>01:00</option>
-  							<option>02:00</option>
-  							<option>03:00</option>
-  							<option>04:00</option>
-  							<option>05:00</option>
-  							<option>06:00</option>
-  							<option>07:00</option>
-  							<option>08:00</option>
-  							<option>09:00</option>
-  							<option>10:00</option>
-  							<option>11:00</option>
-  							<option>12:00</option>
-  							<option>13:00</option>
-  							<option>14:00</option>
-  							<option>14:00</option>
-  							<option>15:00</option>
-  							<option>16:00</option>
-  							<option>17:00</option>
-  							<option>18:00</option>
-  							<option>19:00</option>
-  							<option>20:00</option>
-  							<option>21:00</option>
-  							<option>22:00</option>
-  							<option>23:00</option>
-  							<option>24:00</option>
-  						</select>
-  					</div>
-  				</form>	
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group form-control-lg">
-  						<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
-  						<select class="form-control" id="endTime">
-  							<option>00:00</option>
-  							<option>01:00</option>
-  							<option>02:00</option>
-  							<option>03:00</option>
-  							<option>04:00</option>
-  							<option>05:00</option>
-  							<option>06:00</option>
-  							<option>07:00</option>
-  							<option>08:00</option>
-  							<option>09:00</option>
-  							<option>10:00</option>
-  							<option>11:00</option>
-  							<option>12:00</option>
-  							<option>13:00</option>
-  							<option>14:00</option>
-  							<option>14:00</option>
-  							<option>15:00</option>
-  							<option>16:00</option>
-  							<option>17:00</option>
-  							<option>18:00</option>
-  							<option>19:00</option>
-  							<option>20:00</option>
-  							<option>21:00</option>
-  							<option>22:00</option>
-  							<option>23:00</option>
-  							<option>24:00</option>
-  						</select>
-  					</div>
-  				</form>
-  			</div>
-  		</div>
+				<div class="col-lg-12">
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group">
+								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group">
+								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+							</div>
+						</form>	
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group form-control-lg">
+								<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
+								<select class="form-control" id="startTime">
+									<option>00:00</option>
+									<option>01:00</option>
+									<option>02:00</option>
+									<option>03:00</option>
+									<option>04:00</option>
+									<option>05:00</option>
+									<option>06:00</option>
+									<option>07:00</option>
+									<option>08:00</option>
+									<option>09:00</option>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+									<option>14:00</option>
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+									<option>17:00</option>
+									<option>18:00</option>
+									<option>19:00</option>
+									<option>20:00</option>
+									<option>21:00</option>
+									<option>22:00</option>
+									<option>23:00</option>
+									<option>24:00</option>
+								</select>
+							</div>
+						</form>	
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group form-control-lg">
+								<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
+								<select class="form-control" id="endTime">
+									<option>00:00</option>
+									<option>01:00</option>
+									<option>02:00</option>
+									<option>03:00</option>
+									<option>04:00</option>
+									<option>05:00</option>
+									<option>06:00</option>
+									<option>07:00</option>
+									<option>08:00</option>
+									<option>09:00</option>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+									<option>14:00</option>
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+									<option>17:00</option>
+									<option>18:00</option>
+									<option>19:00</option>
+									<option>20:00</option>
+									<option>21:00</option>
+									<option>22:00</option>
+									<option>23:00</option>
+									<option>24:00</option>
+								</select>
+							</div>
+						</form>
+					</div>
+				</div>
 
-  		<!-------------------------------------- TASK four ---------------------------->
+				<!-------------------------------------- TASK four ---------------------------->
 
-  		<div class="col-lg-12">
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group">
-  						<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
-  						<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
-  					</div>
-  				</form>
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group">
-  						<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
-  						<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
-  					</div>
-  				</form>	
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group form-control-lg">
-  						<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
-  						<select class="form-control" id="startTime">
-  							<option>00:00</option>
-  							<option>01:00</option>
-  							<option>02:00</option>
-  							<option>03:00</option>
-  							<option>04:00</option>
-  							<option>05:00</option>
-  							<option>06:00</option>
-  							<option>07:00</option>
-  							<option>08:00</option>
-  							<option>09:00</option>
-  							<option>10:00</option>
-  							<option>11:00</option>
-  							<option>12:00</option>
-  							<option>13:00</option>
-  							<option>14:00</option>
-  							<option>14:00</option>
-  							<option>15:00</option>
-  							<option>16:00</option>
-  							<option>17:00</option>
-  							<option>18:00</option>
-  							<option>19:00</option>
-  							<option>20:00</option>
-  							<option>21:00</option>
-  							<option>22:00</option>
-  							<option>23:00</option>
-  							<option>24:00</option>
-  						</select>
-  					</div>
-  				</form>	
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group form-control-lg">
-  						<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
-  						<select class="form-control" id="endTime">
-  							<option>00:00</option>
-  							<option>01:00</option>
-  							<option>02:00</option>
-  							<option>03:00</option>
-  							<option>04:00</option>
-  							<option>05:00</option>
-  							<option>06:00</option>
-  							<option>07:00</option>
-  							<option>08:00</option>
-  							<option>09:00</option>
-  							<option>10:00</option>
-  							<option>11:00</option>
-  							<option>12:00</option>
-  							<option>13:00</option>
-  							<option>14:00</option>
-  							<option>14:00</option>
-  							<option>15:00</option>
-  							<option>16:00</option>
-  							<option>17:00</option>
-  							<option>18:00</option>
-  							<option>19:00</option>
-  							<option>20:00</option>
-  							<option>21:00</option>
-  							<option>22:00</option>
-  							<option>23:00</option>
-  							<option>24:00</option>
-  						</select>
-  					</div>
-  				</form>
-  			</div>
-  		</div>
+				<div class="col-lg-12">
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group">
+								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group">
+								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+							</div>
+						</form>	
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group form-control-lg">
+								<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
+								<select class="form-control" id="startTime">
+									<option>00:00</option>
+									<option>01:00</option>
+									<option>02:00</option>
+									<option>03:00</option>
+									<option>04:00</option>
+									<option>05:00</option>
+									<option>06:00</option>
+									<option>07:00</option>
+									<option>08:00</option>
+									<option>09:00</option>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+									<option>14:00</option>
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+									<option>17:00</option>
+									<option>18:00</option>
+									<option>19:00</option>
+									<option>20:00</option>
+									<option>21:00</option>
+									<option>22:00</option>
+									<option>23:00</option>
+									<option>24:00</option>
+								</select>
+							</div>
+						</form>	
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group form-control-lg">
+								<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
+								<select class="form-control" id="endTime">
+									<option>00:00</option>
+									<option>01:00</option>
+									<option>02:00</option>
+									<option>03:00</option>
+									<option>04:00</option>
+									<option>05:00</option>
+									<option>06:00</option>
+									<option>07:00</option>
+									<option>08:00</option>
+									<option>09:00</option>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+									<option>14:00</option>
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+									<option>17:00</option>
+									<option>18:00</option>
+									<option>19:00</option>
+									<option>20:00</option>
+									<option>21:00</option>
+									<option>22:00</option>
+									<option>23:00</option>
+									<option>24:00</option>
+								</select>
+							</div>
+						</form>
+					</div>
+				</div>
 
-  		<!-------------------------------------- TASK five ---------------------------->
+				<!-------------------------------------- TASK five ---------------------------->
 
-  		<div class="col-lg-12">
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group">
-  						<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
-  						<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
-  					</div>
-  				</form>
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group">
-  						<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
-  						<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
-  					</div>
-  				</form>	
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group form-control-lg">
-  						<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
-  						<select class="form-control" id="startTime">
-  							<option>00:00</option>
-  							<option>01:00</option>
-  							<option>02:00</option>
-  							<option>03:00</option>
-  							<option>04:00</option>
-  							<option>05:00</option>
-  							<option>06:00</option>
-  							<option>07:00</option>
-  							<option>08:00</option>
-  							<option>09:00</option>
-  							<option>10:00</option>
-  							<option>11:00</option>
-  							<option>12:00</option>
-  							<option>13:00</option>
-  							<option>14:00</option>
-  							<option>14:00</option>
-  							<option>15:00</option>
-  							<option>16:00</option>
-  							<option>17:00</option>
-  							<option>18:00</option>
-  							<option>19:00</option>
-  							<option>20:00</option>
-  							<option>21:00</option>
-  							<option>22:00</option>
-  							<option>23:00</option>
-  							<option>24:00</option>
-  						</select>
-  					</div>
-  				</form>	
-  			</div>
-  			<div class="col-lg-3">
-  				<form>
-  					<div class="form-group form-control-lg">
-  						<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
-  						<select class="form-control" id="endTime">
-  							<option>00:00</option>
-  							<option>01:00</option>
-  							<option>02:00</option>
-  							<option>03:00</option>
-  							<option>04:00</option>
-  							<option>05:00</option>
-  							<option>06:00</option>
-  							<option>07:00</option>
-  							<option>08:00</option>
-  							<option>09:00</option>
-  							<option>10:00</option>
-  							<option>11:00</option>
-  							<option>12:00</option>
-  							<option>13:00</option>
-  							<option>14:00</option>
-  							<option>14:00</option>
-  							<option>15:00</option>
-  							<option>16:00</option>
-  							<option>17:00</option>
-  							<option>18:00</option>
-  							<option>19:00</option>
-  							<option>20:00</option>
-  							<option>21:00</option>
-  							<option>22:00</option>
-  							<option>23:00</option>
-  							<option>24:00</option>
-  						</select>
-  					</div>
-  				</form>
-  			</div>
-  		</div>
+				<div class="col-lg-12">
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group">
+								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group">
+								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+							</div>
+						</form>	
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group form-control-lg">
+								<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
+								<select class="form-control" id="startTime">
+									<option>00:00</option>
+									<option>01:00</option>
+									<option>02:00</option>
+									<option>03:00</option>
+									<option>04:00</option>
+									<option>05:00</option>
+									<option>06:00</option>
+									<option>07:00</option>
+									<option>08:00</option>
+									<option>09:00</option>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+									<option>14:00</option>
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+									<option>17:00</option>
+									<option>18:00</option>
+									<option>19:00</option>
+									<option>20:00</option>
+									<option>21:00</option>
+									<option>22:00</option>
+									<option>23:00</option>
+									<option>24:00</option>
+								</select>
+							</div>
+						</form>	
+					</div>
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group form-control-lg">
+								<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
+								<select class="form-control" id="endTime">
+									<option>00:00</option>
+									<option>01:00</option>
+									<option>02:00</option>
+									<option>03:00</option>
+									<option>04:00</option>
+									<option>05:00</option>
+									<option>06:00</option>
+									<option>07:00</option>
+									<option>08:00</option>
+									<option>09:00</option>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+									<option>14:00</option>
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+									<option>17:00</option>
+									<option>18:00</option>
+									<option>19:00</option>
+									<option>20:00</option>
+									<option>21:00</option>
+									<option>22:00</option>
+									<option>23:00</option>
+									<option>24:00</option>
+								</select>
+							</div>
+						</form>
+					</div>
+				</div>
 
-  		<div class="col-lg-12">
-  			<button  type="button" class="btn-lg btn-success">Let's Play</button>
-  		</div>
+				<div class="col-lg-12">
+					<button  type="button" class="btn-lg btn-success">Let's Play</button>
+				</div>
 
-  </div>
-</div>
+			</div>
+		</div>
+	</div>
 
-<h1>Gaming Menu</h1>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Setup your Tasks</span>
+	<div class="col-md-2" style="background-color:black;height: 638px;text-align:center;" id="content">
+		<h1 style="color:#fff;">Tasks</h1>
+		<div class="row">
+			<div class="col-md-12 taskMargin">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<label>1</label>
+						<input type="radio" aria-label="...">
+					</span>
+					<input type="text" class="form-control" aria-label="...">
+				</div>
+			</div>
+			<div class="col-md-12 taskMargin">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<label>2</label>
+						<input type="radio" aria-label="...">
+					</span>
+					<input type="text" class="form-control" aria-label="...">
+				</div>
+			</div>
+			<div class="col-md-12 taskMargin">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<label>3</label>
+						<input type="radio" aria-label="...">
+					</span>
+					<input type="text" class="form-control" aria-label="...">
+				</div>
+			</div>
+			<div class="col-md-12 taskMargin">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<label>4</label>
+						<input type="radio" aria-label="...">
+					</span>
+					<input type="text" class="form-control" aria-label="...">
+				</div>
+			</div>
+			<div class="col-md-12 taskMargin">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<label>5</label>
+						<input type="radio" aria-label="...">
+					</span>
+					<input type="text" class="form-control" aria-label="...">
+				</div>
+			</div>
+			<div class="col-md-12 taskMargin">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<label>6</label>	
+						<input type="radio" aria-label="...">
+					</span>
+					<input type="text" class="form-control" aria-label="...">
+				</div>
+			</div>
+			<div class="col-md-12 taskMargin">
+				<button class="btn btn-large btn-success">Update</button>
+			</div>
+		</div>
+	</div> 
+	<script>
+		var toggle = function() {
+			var mydiv = document.getElementById('content');
+			if (mydiv.style.display === 'block' || mydiv.style.display === '')
+				mydiv.style.display = 'none';
+			else
+				mydiv.style.display = 'block'
+		}
+		</script>	
+	<script
+	src="https://code.jquery.com/jquery-1.12.4.min.js"
+	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	crossorigin="anonymous"></script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "100%";
+		}
 
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		function clicked(){
+			openNav();
+			toggle();
+		}
+		function clicked2(){
+			closeNav();
+			toggle();
+		}
+	</script>
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-     
 </body>
 </html> 

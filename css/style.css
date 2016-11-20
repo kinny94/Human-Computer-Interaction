@@ -2,6 +2,13 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+.background{
+    background-image: url('img/snakesAndLadder.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -60,3 +67,7 @@ body {
     height: 60px;
 }
 
+.taskMargin{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
