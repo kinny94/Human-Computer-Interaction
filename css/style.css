@@ -1,3 +1,33 @@
+canvas {
+	position: absolute;
+	margin-left: 210px;
+    margin-top: 52px;
+	top: 0px;
+    width:890px;
+    height: 586px;
+}
+
+.rightMenu{
+    background-color:blue;
+    height:586px;
+    width:267px;
+    margin-top:-20px;
+    text-align:center;
+}
+
+#controls{
+    left: 1000px !important
+}
+
+#diceName {
+	font-size:50px;
+	font-weight: bold;
+}
+
+#diceControl {
+	cursor: pointer;
+}
+
 body {
     font-family: "Lato", sans-serif;
 }
@@ -13,7 +43,7 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     top: 0;
     left: 0;
     background-color: #111;
@@ -50,6 +80,9 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
+.customWidth{
+    width: 200px;
+} 
 #headingColor{
     color: #ccc;
 }
