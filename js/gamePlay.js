@@ -46,6 +46,15 @@ function movePlayer() {
 }
 
 $("#addPlayer").on("click", function(e) {
+     var out = true;
+    $(".taskDisplayName").each(function() { 
+        if( !$(this).val() ) {
+            out = false;
+            
+        }
+    });  
+     if (!out) { alert("First add some tasks."); event.preventDefault(); }
+     return out;  
     var playerName = $("#playerName").val();
     var player = saapSeedi.addPlayer(playerName);
     
