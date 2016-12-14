@@ -7,17 +7,23 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Add IntroJs styles -->
+    <link href="css/introjs.css" rel="stylesheet">
+    <script type="text/javascript" src="js/intro.js"></script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script
 	src="https://code.jquery.com/jquery-1.12.4.min.js"
 	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 	crossorigin="anonymous"></script>
-	<script src="https://walkhub.net/assets/client.js" defer></script>
-	<script src="https://walkhub.net/assets/embed.js" defer></script>
-	<a class="walkthroughbutton" data-origin="https://walkhub.net/" data-position="bottom-right" data-search="kiiiinnnnnnnnnyyyy.github.io" href="https://walkhub.net/"></a>
-	<a class="walkthroughbutton" data-origin="https://walkhub.net/" data-position="bottom-right" href="https://walkhub.net/"></a>
-	<script>
+	<script type="text/javascript">
+		jQuery(function(){
+			jQuery('#wizard').click();
+		});
+	</script>
+	<script type="text/javascript">
 		function showInput(){
 			document.getElementById('taskName1Display').value = 
 			document.getElementById("taskName1").value;
@@ -53,6 +59,47 @@
 			var s5Value = s5.options[s5.selectedIndex].text;
 			document.getElementById('endTime5Display').value = s5Value
 		}
+
+		function reset(){
+			document.getElementById("taskName1").value = "";
+			document.getElementById("taskName2").value = "";
+			document.getElementById("taskName3").value = "";
+			document.getElementById("taskName4").value = "";
+			document.getElementById("taskName5").value = "";
+
+			document.getElementById("taskName1Display").value = "";
+			document.getElementById("taskName2Display").value = "";
+			document.getElementById("taskName3Display").value = "";
+			document.getElementById("taskName4Display").value = "";
+			document.getElementById("taskName5Display").value = "";
+
+			document.getElementById("endTime1").value = "";
+			document.getElementById("endTime2").value = "";
+			document.getElementById("endTime3").value = "";
+			document.getElementById("endTime4").value = "";
+			document.getElementById("endTime5").value = "";
+
+			document.getElementById("endTime1Display").value = "";
+			document.getElementById("endTime2Display").value = "";
+			document.getElementById("endTime3Display").value = "";
+			document.getElementById("endTime4Display").value = "";
+			document.getElementById("endTime5Display").value = "";
+
+			document.getElementById("taskDesc1").value = "";
+			document.getElementById("taskDesc2").value = "";
+			document.getElementById("taskDesc3").value = "";
+			document.getElementById("taskDesc4").value = "";
+			document.getElementById("taskDesc5").value = "";
+
+			document.getElementById("startTime1").value = "";
+			document.getElementById("startTime2").value = "";
+			document.getElementById("startTime3").value = "";
+			document.getElementById("startTime4").value = "";
+			document.getElementById("startTime5").value = "";
+
+
+		}
+
 	</script>
 </head>	
 <body style="background-color: #4a4545; font-family: Tahoma, Geneva, sans-serif !important;">
@@ -62,25 +109,23 @@
 				<a class="navbar-brand" href="#">Interactive Task Manager</a>
 			</div>
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				
-				<li><button style="margin-top:10px;" type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Wizard</button></li> 
+				<li><buttton id="wizard" style="margin-top:10px;" class="btn btn-info btn-sm" href="javascript:void(0);" onclick="javascript:introJs().start();">Wizard</buttton></li>
 
 			</ul>
 		</div>
 	</nav>
 	
 	<div class="col-md-1">
-		<h3 style="margin-top: -10px; color: white"><span class="" style="font-size:30px;cursor:pointer" onclick="clicked()" >&#9776;</span>&nbsp;Tasks</h3>
+		<h3 style="margin-top: -10px; color: white" class="span6" data-step="1" data-intro="Click Here for adding tasks" data-position='right'><span class="" style="font-size:30px;cursor:pointer" onclick="clicked()" >&#9776;</span>&nbsp;Tasks</h3>
 		<table id="diceControl"><tr>
 			<td colspan="3"><h3 style="color: white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Roll the dice!!</h3></td>
 		</tr>
 		<tr >
-			<td style="padding-top: 15px !important;"><img height="50" width="50" src="images/face4.png" id="dice"></td>
+			<td style="padding-top: 15px !important;"><img class="span6" data-step="4" data-intro="Click Here to roll the dice." data-position='right' height="50" width="50" src="images/face4.png" id="dice"></td>
 			<td><p id="diceName"></p></td>
 		</tr></table>
 		<input class="form-control" style="width:150px; margin-top: 30px; margin-left: 40px;" type="text" placeholder="Enter name" id="playerName">
-		<button class="btn btn-success" id="addPlayer" style="margin-top:10px; width: 150px; margin-left: 40px;">Add Player</button>
+		<button class="btn btn-success span6" data-step="3" data-intro="Click Here to add a player." data-position='right' id="addPlayer" style="margin-top:10px; width: 150px; margin-left: 40px;">Add Player</button>
 		<div style="margin-top: 30px; margin-left: 30px; font-size:20px; font-weight: bold; word-break: break-word; width: 200px;">
 			<span class="nP" style="color: white">Current Players</span><br>
 			<span id="gamePlayers"></span>
@@ -105,7 +150,7 @@
 						<form>
 							<div class="form-group">
 								<label for="Task Name"><h4 id="headingColor">Description<h4></label>
-								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+								<input type="text" class="form-control" id="taskDesc1" name="taskName" placeholder="Task's Name">
 							</div>
 						</form>	
 					</div>
@@ -113,7 +158,7 @@
 						<form>
 							<div class="form-group form-control-lg">
 								<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
-								<select class="form-control" id="startTime">
+								<select class="form-control" id="startTime1">
 									<option>00:00</option>
 									<option>01:00</option>
 									<option>02:00</option>
@@ -194,7 +239,7 @@
 						<form>
 							<div class="form-group">
 								<label for="Task Name"><h4 id="headingColor">Description<h4></label>
-								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+								<input type="text" class="form-control" id="taskDesc2" name="taskName" placeholder="Task's Name">
 							</div>
 						</form>	
 					</div>
@@ -202,7 +247,7 @@
 						<form>
 							<div class="form-group form-control-lg">
 								<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
-								<select class="form-control" id="startTime">
+								<select class="form-control" id="startTime2">
 									<option>00:00</option>
 									<option>01:00</option>
 									<option>02:00</option>
@@ -283,7 +328,7 @@
 						<form>
 							<div class="form-group">
 								<label for="Task Name"><h4 id="headingColor">Description<h4></label>
-								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+								<input type="text" class="form-control" id="taskDesc3" name="taskName" placeholder="Task's Name">
 							</div>
 						</form>	
 					</div>
@@ -291,7 +336,7 @@
 						<form>
 							<div class="form-group form-control-lg">
 								<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
-								<select class="form-control" id="startTime">
+								<select class="form-control" id="startTime3">
 									<option>00:00</option>
 									<option>01:00</option>
 									<option>02:00</option>
@@ -372,7 +417,7 @@
 						<form>
 							<div class="form-group">
 								<label for="Task Name"><h4 id="headingColor">Description<h4></label>
-								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+								<input type="text" class="form-control" id="taskDesc4" name="taskName" placeholder="Task's Name">
 							</div>
 						</form>	
 					</div>
@@ -380,7 +425,7 @@
 						<form>
 							<div class="form-group form-control-lg">
 								<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
-								<select class="form-control" id="startTime">
+								<select class="form-control" id="startTime4">
 									<option>00:00</option>
 									<option>01:00</option>
 									<option>02:00</option>
@@ -461,7 +506,7 @@
 						<form>
 							<div class="form-group">
 								<label for="Task Name"><h4 id="headingColor">Description<h4></label>
-								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
+								<input type="text" class="form-control" id="taskDesc5" name="taskName" placeholder="Task's Name">
 							</div>
 						</form>	
 					</div>
@@ -469,7 +514,7 @@
 						<form>
 							<div class="form-group form-control-lg">
 								<label id="expand" for="Start Time"><h4 id="headingColor">Start Time<h4></label>
-								<select class="form-control" id="startTime">
+								<select class="form-control" id="startTime5">
 									<option>00:00</option>
 									<option>01:00</option>
 									<option>02:00</option>
@@ -551,7 +596,7 @@
 			<div class="verticalLine"></div>
 			<div class="verticalLine2"></div>
 			<div id="controls" style="width: 220px">	
-				<div class="row" style="height:586px;width:267px;margin-top:-20px; text-align:center;" id="content">
+				<div class="span6 row" data-step="2" data-intro="Your tasks will appear here." data-position='left' style="height:586px;width:267px;margin-top:-20px; text-align:center;" id="content">
 					<div class="col-md-12 taskMargin">
 						<div style="color: white; font-size: 22px; font-weight: bold;">Task History</div>
 					</div>
@@ -632,7 +677,7 @@
 					</div>
 					
 					<div class="col-md-12 taskMargin">
-						<button class="btn btn-large btn-success">Update</button>
+						<button class="btn btn-large btn-success" onclick="reset();">Reset Tasks</button>
 					</div>
 				</div>
 			</div>
