@@ -8,8 +8,18 @@ canvas {
     border: 1px solid white;
 }
 
-
-
+.verticalLine {
+    border-left: solid #b39e9e;
+    height: 570px;
+    margin-left: 930px;
+    position: absolute;
+}
+.verticalLine2 {
+    border-left: solid #b39e9e;
+    height: 570px;
+    margin-left: 120px;
+    position: absolute;
+}
 .rightMenu{
     background-color:blue;
     height:586px;
