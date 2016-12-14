@@ -6,26 +6,29 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script
 	src="https://code.jquery.com/jquery-1.12.4.min.js"
 	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 	crossorigin="anonymous"></script>
 	<script>
-	function showInput(){
-		document.getElementById('taskName1Display').value = 
-		document.getElementById("taskName1").value;
-		document.getElementById('taskName2Display').value = 
-		document.getElementById("taskName2").value;
-		document.getElementById('taskName3Display').value = 
-		document.getElementById("taskName3").value;
-		document.getElementById('taskName4Display').value = 
-		document.getElementById("taskName4").value;
-		document.getElementById('taskName5Display').value = 
-		document.getElementById("taskName5").value;
-		document.getElementById('taskName6Display').value = 
-		document.getElementById("taskName6").value;
-	}
-</script>
+		function showInput(){
+			document.getElementById('taskName1Display').value = 
+			document.getElementById("taskName1").value;
+			document.getElementById('taskName2Display').value = 
+			document.getElementById("taskName2").value;
+			document.getElementById('taskName3Display').value = 
+			document.getElementById("taskName3").value;
+			document.getElementById('taskName4Display').value = 
+			document.getElementById("taskName4").value;
+			document.getElementById('taskName5Display').value = 
+			document.getElementById("taskName5").value;
+			document.getElementById('taskName6Display').value = 
+			document.getElementById("taskName6").value;
+		}
+	</script>
 </head>	
 <body style="background-color: black;">
 	<nav class="navbar navbar-inverse">
@@ -36,18 +39,19 @@
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#">Home</a></li>
 				<li><a href="#">Page 1</a></li>
-				<li><a href="#">Page 2</a></li> 
+				<li><button style="margin-top:10px;" type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Wizard</button></li> 
 				<li><a href="#">Page 3</a></li> 
 			</ul>
 		</div>
 	</nav>
+	
 	<div class="col-md-1">
 		<h3 style="margin-top: -10px"><span style="font-size:30px;cursor:pointer" onclick="clicked()" >&#9776;</span>&nbsp;Tasks</h3>
 		<table id="diceControl"><tr>
 			<td><img height="100" width="100" src="images/face4.png" id="dice"></td>
 			<td><p id="diceName"></p></td>
 		</tr></table>
-		<input class="form-control" style="width:150px; margin-top: 10px" type="text" placeholder="Enter name" id="playerName"><button class="btn btn-success" id="addPlayer" style="margin-top:10px;">Add Player</button></input>
+		<input class="form-control" style="width:150px; margin-top: 10px" type="text" placeholder="Enter name" id="playerName"><button class="btn btn-success" id="addPlayer" style="margin-top:10px;">Add Player</button>
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="clicked2()">&times;</a>
 			<div class="container">
@@ -505,6 +509,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="container">
 		<div class="col-md-2">
 			<div id="controls" style="width: 220px">	
@@ -568,41 +573,77 @@
 					</div>
 				</div>
 			</div>
+		</div>	
+	</div>
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="myModal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img class="img-responsive" src="http://placehold.it/1200x600/555/000&text=One" alt="...">
+							<div class="carousel-caption">
+								One Image
+							</div>
+						</div>
+						<div class="item">
+							<img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=Two" alt="...">
+							<div class="carousel-caption">
+								Another Image
+							</div>
+						</div>
+						<div class="item">
+							<img class="img-responsive" src="http://placehold.it/1200x600/fcf00c/000&text=Three" alt="...">
+							<div class="carousel-caption">
+								Another Image
+							</div>
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/saapSeedi.js"></script>
 	<script type="text/javascript" src="js/gamePlay.js"></script>
-</div>	
-<script>
-	var toggle = function() {
-		var mydiv = document.getElementById('content');
-		if (mydiv.style.display === 'block' || mydiv.style.display === '')
-			mydiv.style.display = 'none';
-		else
-			mydiv.style.display = 'block'
-	}
-</script>	
-<script
-src="https://code.jquery.com/jquery-1.12.4.min.js"
-integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-crossorigin="anonymous"></script>
-<script>
-	function openNav() {
-		document.getElementById("mySidenav").style.width = "100%";
-	}
+	<script>
+		var toggle = function() {
+			var mydiv = document.getElementById('content');
+			if (mydiv.style.display === 'block' || mydiv.style.display === '')
+				mydiv.style.display = 'none';
+			else
+				mydiv.style.display = 'block'
+		}
+	</script>	
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "100%";
+		}
 
-	function closeNav() {
-		document.getElementById("mySidenav").style.width = "0";
-	}
-	function clicked(){
-		openNav();
-		toggle();
-	}
-	function clicked2(){
-		closeNav();
-		toggle();
-	}
-</script>
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		function clicked(){
+			openNav();
+			toggle();
+		}
+		function clicked2(){
+			closeNav();
+			toggle();
+		}
+	</script>
 </body>
 </html>
