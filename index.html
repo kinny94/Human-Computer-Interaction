@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Saap Seedi - Online Snake and Ladder Game</title>
+	<title>ITM</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -25,38 +25,41 @@
 			document.getElementById("taskName4").value;
 			document.getElementById('taskName5Display').value = 
 			document.getElementById("taskName5").value;
-			document.getElementById('taskName6Display').value = 
-			document.getElementById("taskName6").value;
+			clicked2();
 		}
 	</script>
 </head>	
-<body style="background-color: black;">
-	<nav class="navbar navbar-inverse">
+<body style="background-color: black; font-family: Tahoma, Geneva, sans-serif !important;">
+	<nav class="navbar navbar-inverse" style="background-color: #0b1a28;">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#">Interactive Task Manager</a>
 			</div>
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Page 1</a></li>
+				
 				<li><button style="margin-top:10px;" type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Wizard</button></li> 
-				<li><a href="#">Page 3</a></li> 
+				 
 			</ul>
 		</div>
 	</nav>
 	
 	<div class="col-md-1">
-		<h3 style="margin-top: -10px"><span style="font-size:30px;cursor:pointer" onclick="clicked()" >&#9776;</span>&nbsp;Tasks</h3>
+		<h3 style="margin-top: -10px; color: white"><span class="" style="font-size:30px;cursor:pointer" onclick="clicked()" >&#9776;</span>&nbsp;Tasks</h3>
 		<table id="diceControl"><tr>
-			<td><img height="100" width="100" src="images/face4.png" id="dice"></td>
+			<td colspan="3"><h3 style="color: white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Roll the dice!!</h3></td>
+		</tr>
+		<tr >
+			<td style="padding-top: 15px !important;"><img height="50" width="50" src="images/face4.png" id="dice"></td>
 			<td><p id="diceName"></p></td>
 		</tr></table>
-		<input class="form-control" style="width:150px; margin-top: 10px" type="text" placeholder="Enter name" id="playerName"><button class="btn btn-success" id="addPlayer" style="margin-top:10px;">Add Player</button>
+		<input class="form-control" style="width:150px; margin-top: 30px; margin-left: 40px;" type="text" placeholder="Enter name" id="playerName">
+		<button class="btn btn-success" id="addPlayer" style="margin-top:10px; width: 150px; margin-left: 40px;">Add Player</button>
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="clicked2()">&times;</a>
 			<div class="container">
 				<div class="col-lg-12" id="freeSpace">
-					<h1>Schedule your tasks</h1>
+					<h1 style="color: white"">Schedule your tasks</h1>
 				</div>
 				<!-------------------------------------- TASK ONE ---------------------------->
 				<div class="col-lg-12">
@@ -71,7 +74,7 @@
 					<div class="col-lg-3">
 						<form>
 							<div class="form-group">
-								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<label for="Task Name"><h4 id="headingColor">Description<h4></label>
 								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
 							</div>
 						</form>	
@@ -160,7 +163,7 @@
 					<div class="col-lg-3">
 						<form>
 							<div class="form-group">
-								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<label for="Task Name"><h4 id="headingColor">Description<h4></label>
 								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
 							</div>
 						</form>	
@@ -249,7 +252,7 @@
 					<div class="col-lg-3">
 						<form>
 							<div class="form-group">
-								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<label for="Task Name"><h4 id="headingColor">Description<h4></label>
 								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
 							</div>
 						</form>	
@@ -338,7 +341,7 @@
 					<div class="col-lg-3">
 						<form>
 							<div class="form-group">
-								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<label for="Task Name"><h4 id="headingColor">Description<h4></label>
 								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
 							</div>
 						</form>	
@@ -427,7 +430,7 @@
 					<div class="col-lg-3">
 						<form>
 							<div class="form-group">
-								<label for="Task Name"><h4 id="headingColor">Task's Name<h4></label>
+								<label for="Task Name"><h4 id="headingColor">Description<h4></label>
 								<input type="text" class="form-control" id="taskName" name="taskName" placeholder="Task's Name">
 							</div>
 						</form>	
@@ -504,70 +507,68 @@
 					</div>
 				</div>
 				<div class="col-lg-12">
-					<button  type="button" class="btn-lg btn-success" onclick="showInput();">Let's Play</button>
+					<button  type="button" class="btn-lg btn-success" onclick="showInput(); ">Let's Play</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
+		<div style="color: white; font-size: 20px; margin-left: 450px;">
+			Snake & Ladder
+		</div>
 		<div class="col-md-2">
 			<div id="controls" style="width: 220px">	
-				<div class="row" style="background-color:black;height:586px;width:267px;margin-top:-20px; text-align:center;" id="content">
+				<div class="row" style="height:586px;width:267px;margin-top:-20px; text-align:center;" id="content">
+					<div class="col-md-12 taskMargin">
+						<div style="color: white; font-size: 22px; font-weight: bold;">Task History</div>
+					</div>
 					<div class="col-md-12 taskMargin">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<label>1</label>
-								<input type="radio" aria-label="...">
+								<input type="radio" name="task" aria-label="...">
 							</span>
-							<input id="taskName1Display" type="text" class="form-control" aria-label="..." value="">
+							<input id="taskName1Display" type="text" class="form-control taskDisplayName" aria-label="..." value="">
 						</div>
 					</div>
 					<div class="col-md-12 taskMargin">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<label>2</label>
-								<input type="radio" aria-label="...">
+								<input type="radio" name="task" aria-label="...">
 							</span>
-							<input id="taskName2Display" type="text" class="form-control" aria-label="...">
+							<input id="taskName2Display" type="text" class="form-control taskDisplayName" aria-label="...">
 						</div>
 					</div>
 					<div class="col-md-12 taskMargin">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<label>3</label>
-								<input type="radio" aria-label="...">
+								<input type="radio" name="task" aria-label="...">
 							</span>
-							<input id="taskName3Display" type="text" class="form-control" aria-label="...">
+							<input id="taskName3Display" type="text" class="form-control taskDisplayName" aria-label="...">
 						</div>
 					</div>
 					<div class="col-md-12 taskMargin">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<label>4</label>
-								<input type="radio" aria-label="...">
+								<input type="radio" name="task" aria-label="...">
 							</span>
-							<input id="taskName4Display" type="text" class="form-control" aria-label="...">
+							<input id="taskName4Display" type="text" class="form-control taskDisplayName" aria-label="...">
 						</div>
 					</div>
 					<div class="col-md-12 taskMargin">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<label>5</label>
-								<input type="radio" aria-label="...">
+								<input type="radio" name="task" aria-label="...">
 							</span>
-							<input id="taskName5Display" type="text" class="form-control" aria-label="...">
+							<input id="taskName5Display" type="text" class="form-control taskDisplayName" aria-label="...">
 						</div>
 					</div>
-					<div class="col-md-12 taskMargin">
-						<div class="input-group">
-							<span class="input-group-addon">
-								<label>6</label>	
-								<input type="radio" aria-label="...">
-							</span>
-							<input id="taskName1Display"  type="text" class="form-control" aria-label="...">
-						</div>
-					</div>
+					
 					<div class="col-md-12 taskMargin">
 						<button class="btn btn-large btn-success">Update</button>
 					</div>
@@ -625,6 +626,17 @@
 				mydiv.style.display = 'none';
 			else
 				mydiv.style.display = 'block'
+		}
+
+		var radios = document.getElementsByName('task');
+		for(i=0; i<radios.length; i++ ) {
+    		radios[i].onclick = function(e) {
+        		if(e.ctrlKey) {
+            		this.checked = false;
+        		} else{
+        			this.checked = true;
+        		}
+    		}
 		}
 	</script>	
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
