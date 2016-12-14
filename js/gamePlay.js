@@ -10,6 +10,8 @@ function updateDiceName() {
     $("#diceName").attr({
         "style": "color: " + playerColor
     }).hide().html(playerName).fadeIn(2000);
+
+          
 }
 
 function movePlayer() {
@@ -68,7 +70,10 @@ $("#addPlayer").on("click", function(e) {
         $("#playerName").hide();
         $("#addPlayer").hide();
     }
-    
+    $("#gamePlayers").append('<span>' + playerName + '</span><br>');  
+    $("#gamePlayers span").attr({
+        "style": "color: white; margin-left: 30px; font-size: 15px"
+    })
     updateDiceName();
 });
 
