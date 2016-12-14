@@ -1,11 +1,14 @@
 canvas {
 	position: absolute;
-	margin-left: 210px;
-    margin-top: 52px;
+	margin-left: 300px;
+    margin-top: 150px;
 	top: 0px;
-    width:890px;
-    height: 586px;
+    width:700px;
+    height: 500px;
+    border: 1px solid white;
 }
+
+
 
 .rightMenu{
     background-color:blue;
@@ -20,12 +23,16 @@ canvas {
 }
 
 #diceName {
-	font-size:50px;
+	font-size:25px;
 	font-weight: bold;
+    word-break: break-word;
+    margin-left: 20px;
 }
 
 #diceControl {
 	cursor: pointer;
+    margin-top: 50px !important;
+    width: 200px;
 }
 
 body {
