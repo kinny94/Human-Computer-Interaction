@@ -13,6 +13,10 @@
 	src="https://code.jquery.com/jquery-1.12.4.min.js"
 	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 	crossorigin="anonymous"></script>
+	<script src="https://walkhub.net/assets/client.js" defer></script>
+	<script src="https://walkhub.net/assets/embed.js" defer></script>
+	<a class="walkthroughbutton" data-origin="https://walkhub.net/" data-position="bottom-right" data-search="kiiiinnnnnnnnnyyyy.github.io" href="https://walkhub.net/"></a>
+	<a class="walkthroughbutton" data-origin="https://walkhub.net/" data-position="bottom-right" href="https://walkhub.net/"></a>
 	<script>
 		function showInput(){
 			document.getElementById('taskName1Display').value = 
@@ -61,7 +65,7 @@
 				<li class="active"><a href="#">Home</a></li>
 				
 				<li><button style="margin-top:10px;" type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Wizard</button></li> 
-				 
+				
 			</ul>
 		</div>
 	</nav>
@@ -688,13 +692,13 @@
 
 		var radios = document.getElementsByName('task');
 		for(i=0; i<radios.length; i++ ) {
-    		radios[i].onclick = function(e) {
-        		if(e.ctrlKey) {
-            		this.checked = false;
-        		} else{
-        			this.checked = true;
-        		}
-    		}
+			radios[i].onclick = function(e) {
+				if(e.ctrlKey) {
+					this.checked = false;
+				} else{
+					this.checked = true;
+				}
+			}
 		}
 	</script>	
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
