@@ -27,6 +27,28 @@
 			document.getElementById("taskName5").value;
 			clicked2();
 		}
+
+		function showSartTime(){
+			var s1 = document.getElementById('endTime1');
+			var s1Value = s1.options[s1.selectedIndex].text;
+			document.getElementById('endTime1Display').value = s1Value
+
+			var s2 = document.getElementById('endTime2');
+			var s2Value = s2.options[s2.selectedIndex].text;
+			document.getElementById('endTime2Display').value = s2Value
+			
+			var s3 = document.getElementById('endTime3');
+			var s3Value = s3.options[s3.selectedIndex].text;
+			document.getElementById('endTime3Display').value = s3Value
+
+			var s4 = document.getElementById('endTime4');
+			var s4Value = s4.options[s4.selectedIndex].text;
+			document.getElementById('endTime4Display').value = s4Value
+
+			var s5 = document.getElementById('endTime5');
+			var s5Value = s5.options[s5.selectedIndex].text;
+			document.getElementById('endTime5Display').value = s5Value
+		}
 	</script>
 </head>	
 <body style="background-color: black; font-family: Tahoma, Geneva, sans-serif !important;">
@@ -122,7 +144,7 @@
 						<form>
 							<div class="form-group form-control-lg">
 								<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
-								<select class="form-control" id="endTime">
+								<select class="form-control" id="endTime1">
 									<option>00:00</option>
 									<option>01:00</option>
 									<option>02:00</option>
@@ -211,7 +233,7 @@
 						<form>
 							<div class="form-group form-control-lg">
 								<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
-								<select class="form-control" id="endTime">
+								<select class="form-control" id="endTime2">
 									<option>00:00</option>
 									<option>01:00</option>
 									<option>02:00</option>
@@ -300,7 +322,7 @@
 						<form>
 							<div class="form-group form-control-lg">
 								<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
-								<select class="form-control" id="endTime">
+								<select class="form-control" id="endTime3">
 									<option>00:00</option>
 									<option>01:00</option>
 									<option>02:00</option>
@@ -389,7 +411,7 @@
 						<form>
 							<div class="form-group form-control-lg">
 								<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
-								<select class="form-control" id="endTime">
+								<select class="form-control" id="endTime4">
 									<option>00:00</option>
 									<option>01:00</option>
 									<option>02:00</option>
@@ -478,7 +500,7 @@
 						<form>
 							<div class="form-group form-control-lg">
 								<label id="expand" for="End Time"><h4 id="headingColor">End Time<h4></label>
-								<select class="form-control" id="endTime">
+								<select class="form-control" id="endTime5">
 									<option>00:00</option>
 									<option>01:00</option>
 									<option>02:00</option>
@@ -511,7 +533,7 @@
 					</div>
 				</div>
 				<div class="col-lg-12">
-					<button  type="button" class="btn-lg btn-success" onclick="showInput(); ">Let's Play</button>
+					<button  type="button" class="btn-lg btn-success" onclick="showInput(); showSartTime();">Let's Play</button>
 				</div>
 			</div>
 		</div>
@@ -535,6 +557,12 @@
 							</span>
 							<input id="taskName1Display" type="text" class="form-control taskDisplayName" aria-label="..." value="">
 						</div>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<label>Ends at</label>
+							</span>
+							<input id="endTime1Display" type="text" class="form-control taskDisplayName" aria-label="..." value="">
+						</div>
 					</div>
 					<div class="col-md-12 taskMargin">
 						<div class="input-group">
@@ -543,6 +571,12 @@
 								<input type="radio" name="task" aria-label="...">
 							</span>
 							<input id="taskName2Display" type="text" class="form-control taskDisplayName" aria-label="...">
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<label>Ends at</label>
+							</span>
+							<input id="endTime2Display" type="text" class="form-control taskDisplayName" aria-label="..." value="">
 						</div>
 					</div>
 					<div class="col-md-12 taskMargin">
@@ -553,6 +587,12 @@
 							</span>
 							<input id="taskName3Display" type="text" class="form-control taskDisplayName" aria-label="...">
 						</div>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<label>Ends at</label>
+							</span>
+							<input id="endTime3Display" type="text" class="form-control taskDisplayName" aria-label="..." value="">
+						</div>
 					</div>
 					<div class="col-md-12 taskMargin">
 						<div class="input-group">
@@ -562,6 +602,12 @@
 							</span>
 							<input id="taskName4Display" type="text" class="form-control taskDisplayName" aria-label="...">
 						</div>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<label>Ends at</label>
+							</span>
+							<input id="endTime4Display" type="text" class="form-control taskDisplayName" aria-label="..." value="">
+						</div>
 					</div>
 					<div class="col-md-12 taskMargin">
 						<div class="input-group">
@@ -570,6 +616,12 @@
 								<input type="radio" name="task" aria-label="...">
 							</span>
 							<input id="taskName5Display" type="text" class="form-control taskDisplayName" aria-label="...">
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<label>Ends at</label>
+							</span>
+							<input id="endTime5Display" type="text" class="form-control taskDisplayName" aria-label="..." value="">
 						</div>
 					</div>
 					
