@@ -100,6 +100,29 @@
 
 		}
 
+		function hideChecked(){
+			if($('input.task1').is(':checked')){
+				$('#yo1').hide();
+				console.log('hidden');
+			}
+			if($('input.task2').is(':checked')){
+				$('#yo2').hide();
+				console.log('hidden');
+			}
+			if($('input.task3').is(':checked')){
+				$('#yo3').hide();
+				console.log('hidden');
+			}
+			if($('input.task4').is(':checked')){
+				$('#yo4').hide();
+				console.log('hidden');
+			}
+			if($('input.task5').is(':checked')){
+				$('#yo5').hide();
+				console.log('hidden');
+			}
+		}
+
 	</script>
 </head>	
 <body style="background-color: #4a4545; font-family: Tahoma, Geneva, sans-serif !important;">
@@ -600,11 +623,11 @@
 					<div class="col-md-12 taskMargin">
 						<div style="color: white; font-size: 22px; font-weight: bold;">Task History</div>
 					</div>
-					<div class="col-md-12 taskMargin">
+					<div class="col-md-12 taskMargin" id="yo1">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<label>1</label>
-								<input type="radio" name="task" aria-label="...">
+								<input type="checkbox" name="task1" aria-label="..." id="task1" class="task1">
 							</span>
 							<input id="taskName1Display" type="text" class="form-control taskDisplayName" aria-label="..." value="">
 						</div>
@@ -615,11 +638,11 @@
 							<input id="endTime1Display" type="text" class="form-control taskDisplayName" aria-label="..." value="">
 						</div>
 					</div>
-					<div class="col-md-12 taskMargin">
+					<div class="col-md-12 taskMargin" id="yo2">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<label>2</label>
-								<input type="radio" name="task" aria-label="...">
+								<input type="checkbox" name="task2" aria-label="..." id="task2" class="task2">
 							</span>
 							<input id="taskName2Display" type="text" class="form-control taskDisplayName" aria-label="...">
 						</div>
@@ -630,11 +653,11 @@
 							<input id="endTime2Display" type="text" class="form-control taskDisplayName" aria-label="..." value="">
 						</div>
 					</div>
-					<div class="col-md-12 taskMargin">
+					<div class="col-md-12 taskMargin" id="yo3">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<label>3</label>
-								<input type="radio" name="task" aria-label="...">
+								<input type="checkbox" name="task3" aria-label="..." id="task3" class="task3">
 							</span>
 							<input id="taskName3Display" type="text" class="form-control taskDisplayName" aria-label="...">
 						</div>
@@ -645,11 +668,11 @@
 							<input id="endTime3Display" type="text" class="form-control taskDisplayName" aria-label="..." value="">
 						</div>
 					</div>
-					<div class="col-md-12 taskMargin">
+					<div class="col-md-12 taskMargin" id="yo4">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<label>4</label>
-								<input type="radio" name="task" aria-label="...">
+								<input type="checkbox" name="task4" aria-label="..." id="task4" class="task4">
 							</span>
 							<input id="taskName4Display" type="text" class="form-control taskDisplayName" aria-label="...">
 						</div>
@@ -660,11 +683,11 @@
 							<input id="endTime4Display" type="text" class="form-control taskDisplayName" aria-label="..." value="">
 						</div>
 					</div>
-					<div class="col-md-12 taskMargin">
+					<div class="col-md-12 taskMargin" id="yo5">
 						<div class="input-group">
 							<span class="input-group-addon">
 								<label>5</label>
-								<input type="radio" name="task" aria-label="...">
+								<input type="checkbox" name="task5" aria-label="..." id="task5" class="task5">
 							</span>
 							<input id="taskName5Display" type="text" class="form-control taskDisplayName" aria-label="...">
 						</div>
@@ -677,7 +700,7 @@
 					</div>
 					
 					<div class="col-md-12 taskMargin">
-						<button class="btn btn-large btn-success" onclick="reset();">Reset Tasks</button>
+						<button class="btn btn-large btn-success" id="hide" onclick="hideChecked();">Reset Tasks</button>
 					</div>
 				</div>
 			</div>
